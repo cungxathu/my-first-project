@@ -9,6 +9,7 @@ import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import QuantityBox from "../QuantityBox"
 import { IoIosHeartEmpty } from "react-icons/io";
 import { MyContext } from '../../App';
+import { IoCartSharp } from "react-icons/io5";
 
 
 const ProductModal = (props)=>{
@@ -146,7 +147,7 @@ const ProductModal = (props)=>{
 
                             <div className='d-flex align-items-center'>
                                 <QuantityBox/>
-                                <Button className='btn-red btn-lg btn-big btn-round mr-2 ml-3'>Thêm vào giỏ hàng</Button>
+                                <Button className='btn-red btn-lg btn-big btn-round mr-2 ml-3'><IoCartSharp />Thêm vào giỏ hàng</Button>
                                 <Button className='btn-white btn-lg btn-big btn-round'>Gọi Ngay(miễn Phí)</Button>
                             </div>
 

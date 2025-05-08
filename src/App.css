@@ -53,7 +53,7 @@ color: rgba(0,0,0,0.4) !important; line-height: 16px;}
   .close_ svg{font-size: 22px;}
 
 
-  .headerSearch{width: 60%; height: 60px;background: #f3f4f7; padding: 5px;position: relative;
+  .headerSearch{width: 55%; height: 55px;background: #f3f4f7; padding: 5px;position: relative;
   border-radius: 5px; border: 1px solid rgba(0,0,0,0.1);}
   .headerSearch input{background: transparent !important;outline: none !important; font-size: 18px;
   color: rgba(0,0,0,0.7); width: 100%; height: 45px; border: 0px !important;
@@ -256,9 +256,17 @@ color: rgba(0,0,0,0.4) !important; line-height: 16px;}
 
 button{text-transform: capitalize !important;outline: none !important;}
 
+.text-red{color: #ed174a !important;}
+.text-blue{color:#003468 !important;}
+
+.btn-blue{background:#2334a3 !important;color: #fff !important;outline: none !important;text-transform: capitalize !important;font-weight: 600 !important;
+padding: 5px 20px !important;}
+
+.btn-red:hover{background: #003468 !important;}
+
 .btn-red{background:#c60018 !important;color: #fff !important;outline: none !important;text-transform: capitalize !important;}
 .btn-big{font-size: 14px !important;padding: 7px 20px !important;min-width: auto !important;}
-.btn-round{border-radius: 5px !important;}
+.btn-round{border-radius: 30px !important;}
 .btn-sml{font-size: 12px !important; color: #000;text-transform: capitalize !important;}
 .btn-sml svg{font-size: 20px;}
 .btn-white{background:#fff !important;color:  #000 !important;border:1px solid rgba(0,0,0,0.8) !important;
@@ -275,7 +283,7 @@ button{text-transform: capitalize !important;outline: none !important;}
 }
 
 .productItem:hover .spham {
-  color: red;
+  color: #ed174a !important;
   transition: color 0.3s ease;
 }
 
@@ -453,7 +461,7 @@ cursor: pointer;}
 
 
 
-
+.section{padding:45px 0px}
 
 
 
@@ -734,5 +742,57 @@ justify-content: space-between;}
 
 .cartPage .table thead{background:#e3e3e3 !important;overflow: hidden;}
 .cartPage .table thead th{border:0px !important}
-.cartPage .table thead th:first-child{border-top-left-radius:15px !important ;border-bottom-left-radius:15px !important ;}
-.cartPage .table thead th:last-child{border-top-right-radius:15px !important ;border-bottom-right-radius:15px !important ;}
+.cartPage .table thead th:first-child{border-top-left-radius:10px !important ;border-bottom-left-radius:10px !important ;}
+.cartPage .table thead th:last-child{border-top-right-radius:10px !important ;border-bottom-right-radius:10px !important ;}
+
+
+a:hover{text-decoration: none;}
+
+.cartimgWrapper {width: 280px;}
+.cartimgWrapper .imgWrapper{width:100px;overflow:hidden;}
+.cartimgWrapper .info a:hover{text-decoration: none;}
+.cartimgWrapper .info h6{color: #343434;font-weight: bold;}
+.cartimgWrapper .info h6:hover{color: #ed174a !important;}
+.remove{cursor: pointer;}
+.remove svg{font-size:30px;}
+.remove:hover svg{color: #ed174a !important;}
+
+.cartPage .quantityDrop button{zoom: 70%;}
+.cartPage table th, .cartPage table td{vertical-align: middle;}
+.cartPage .table td, .cartPage .table th{border-top: 0px !important;border-bottom: 1px solid rgba(0,0,0,0.1) !important;}
+
+.cartPage table tbody tr{background: #fff !important;}
+.cartPage table tbody tr:hover{background: #fafafa !important;}
+
+.cartDetails{border-radius: 7px !important;position: sticky;top:20px;}
+.cartDetails h4{font-size: 16px;padding-bottom: 15px;font-weight: 800 !important;border-bottom: 1px solid rgba(0,0,0,0.1);}
+
+.cartDetails span{}
+
+.signInPage{width: 100%; height:100vh;position: relative;overflow: hidden;}
+.signInPage .shape-bottom{position: absolute;top:auto;bottom: -6px;left: 0;right: 0;z-index: 1;}
+.signInPage::after{position: absolute;content: '';height: 100%;width: 100%;top: 0;left: 0;background-image: linear-gradient(#1e3d81,#2334a3);
+  opacity: 0.9;z-index: -1;
+}
+
+.signInPage .box{width: 400px ;height:auto;background: #fff;margin: auto;position: relative;
+z-index: 100;border-radius: 10px !important;}
+.signInPage .box h2{font-size: 25px;font-weight: 600;}
+
+.signInPage .box form{padding: 20px 30px;}
+
+.border-effect {
+  color: #337ab7 !important;
+  position: relative;
+  text-decoration: none;
+}
+
+.border-effect:after {background-color: #102a44 !important;bottom: -2px;content: "";
+  display: block;height: 1px;left: 0;position: absolute;transition: .2s;width: 0;}
+.border-effect:hover {color: #000 !important;text-decoration: none;}
+.border-effect:hover:after {width: 100%;}
+
+.signInPage .box .form-group {margin-bottom: 15px;}
+.signInPage .box .txt {font-size: 14px;font-weight: 700;}
+
+.signUpPage .box {width: 500px;}

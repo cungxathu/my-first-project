@@ -41,11 +41,14 @@ const Header =()=>{
                             <SearchBox/>
 
                             <div className='part3 d-flex align-items-center ml-auto'>
-                                <Button className='circle mr-3'><FiUser/></Button>
+                                {
+                                    context.isLogin!==true ? <Link to="/signIn"><Button className="btn-blue btn-round mr-3">Sign In</Button></Link>
+                                     : <Button className='circle mr-3'><FiUser/></Button>
+                                }
                                 <div className='ml-auto cartTab d-flex align-items-center'>
                                     <span className='price'>0VND</span>
                                     <div className='position-relative ml-2'>
-                                    <Button className='circle'><CiBag1/></Button>
+                                    <Link to="/cart"><Button className='circle'><CiBag1/></Button></Link>
                                     <span className='count d-flex align-items-center justify-content-center'>1</span>
                                     </div>
                                 </div>
